@@ -12,6 +12,23 @@
 		274EDD9B23D4029E000B505D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274EDD9A23D4029E000B505D /* ViewController.swift */; };
 		274EDDA023D402A6000B505D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 274EDD9F23D402A6000B505D /* Assets.xcassets */; };
 		274EDDA323D402A6000B505D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 274EDDA123D402A6000B505D /* LaunchScreen.storyboard */; };
+		274EDDAC23D41F1E000B505D /* UIlabelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274EDDAB23D41F1E000B505D /* UIlabelViewController.swift */; };
+		274EDDAE23D428E4000B505D /* UITextViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274EDDAD23D428E4000B505D /* UITextViewViewController.swift */; };
+		274EDDB123D430A6000B505D /* UITextFieldViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274EDDB023D430A6000B505D /* UITextFieldViewController.swift */; };
+		274EDDB323D4544F000B505D /* UIButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274EDDB223D4544F000B505D /* UIButtonViewController.swift */; };
+		274EDDB523D4583A000B505D /* UIAlertControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274EDDB423D4583A000B505D /* UIAlertControllerViewController.swift */; };
+		274EDDBD23D46C3C000B505D /* 04.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 274EDDB923D46C3C000B505D /* 04.jpg */; };
+		274EDDBF23D46C5D000B505D /* UIImageViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274EDDBE23D46C5D000B505D /* UIImageViewViewController.swift */; };
+		274EDDC123D47061000B505D /* AutoPlayImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274EDDC023D47061000B505D /* AutoPlayImageViewController.swift */; };
+		274EDDC623D47131000B505D /* 01.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 274EDDC323D47131000B505D /* 01.jpg */; };
+		274EDDC723D47131000B505D /* 03.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 274EDDC423D47131000B505D /* 03.jpg */; };
+		274EDDC823D47131000B505D /* 02.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 274EDDC523D47131000B505D /* 02.jpg */; };
+		274EDDD023D47156000B505D /* play@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 274EDDCA23D47155000B505D /* play@2x.png */; };
+		274EDDD123D47156000B505D /* stop.png in Resources */ = {isa = PBXBuildFile; fileRef = 274EDDCB23D47155000B505D /* stop.png */; };
+		274EDDD223D47156000B505D /* play@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 274EDDCC23D47155000B505D /* play@3x.png */; };
+		274EDDD323D47156000B505D /* stop@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 274EDDCD23D47155000B505D /* stop@2x.png */; };
+		274EDDD423D47156000B505D /* stop@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 274EDDCE23D47156000B505D /* stop@3x.png */; };
+		274EDDD523D47156000B505D /* play.png in Resources */ = {isa = PBXBuildFile; fileRef = 274EDDCF23D47156000B505D /* play.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +39,23 @@
 		274EDD9F23D402A6000B505D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		274EDDA223D402A6000B505D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		274EDDA423D402A6000B505D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		274EDDAB23D41F1E000B505D /* UIlabelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIlabelViewController.swift; sourceTree = "<group>"; };
+		274EDDAD23D428E4000B505D /* UITextViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextViewViewController.swift; sourceTree = "<group>"; };
+		274EDDB023D430A6000B505D /* UITextFieldViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextFieldViewController.swift; sourceTree = "<group>"; };
+		274EDDB223D4544F000B505D /* UIButtonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonViewController.swift; sourceTree = "<group>"; };
+		274EDDB423D4583A000B505D /* UIAlertControllerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIAlertControllerViewController.swift; sourceTree = "<group>"; };
+		274EDDB923D46C3C000B505D /* 04.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 04.jpg; sourceTree = "<group>"; };
+		274EDDBE23D46C5D000B505D /* UIImageViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewViewController.swift; sourceTree = "<group>"; };
+		274EDDC023D47061000B505D /* AutoPlayImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoPlayImageViewController.swift; sourceTree = "<group>"; };
+		274EDDC323D47131000B505D /* 01.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 01.jpg; sourceTree = "<group>"; };
+		274EDDC423D47131000B505D /* 03.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 03.jpg; sourceTree = "<group>"; };
+		274EDDC523D47131000B505D /* 02.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 02.jpg; sourceTree = "<group>"; };
+		274EDDCA23D47155000B505D /* play@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "play@2x.png"; sourceTree = "<group>"; };
+		274EDDCB23D47155000B505D /* stop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stop.png; sourceTree = "<group>"; };
+		274EDDCC23D47155000B505D /* play@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "play@3x.png"; sourceTree = "<group>"; };
+		274EDDCD23D47155000B505D /* stop@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "stop@2x.png"; sourceTree = "<group>"; };
+		274EDDCE23D47156000B505D /* stop@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "stop@3x.png"; sourceTree = "<group>"; };
+		274EDDCF23D47156000B505D /* play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = play.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +88,55 @@
 		274EDD9523D4029E000B505D /* StudyVC */ = {
 			isa = PBXGroup;
 			children = (
+				274EDDC923D47147000B505D /* icon */,
+				274EDDC223D47116000B505D /* images */,
+				274EDDAF23D42986000B505D /* ViewControllers */,
 				274EDD9623D4029E000B505D /* AppDelegate.swift */,
 				274EDD9823D4029E000B505D /* SceneDelegate.swift */,
-				274EDD9A23D4029E000B505D /* ViewController.swift */,
 				274EDD9F23D402A6000B505D /* Assets.xcassets */,
 				274EDDA123D402A6000B505D /* LaunchScreen.storyboard */,
 				274EDDA423D402A6000B505D /* Info.plist */,
 			);
 			path = StudyVC;
+			sourceTree = "<group>";
+		};
+		274EDDAF23D42986000B505D /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				274EDDB023D430A6000B505D /* UITextFieldViewController.swift */,
+				274EDDAB23D41F1E000B505D /* UIlabelViewController.swift */,
+				274EDDAD23D428E4000B505D /* UITextViewViewController.swift */,
+				274EDD9A23D4029E000B505D /* ViewController.swift */,
+				274EDDB223D4544F000B505D /* UIButtonViewController.swift */,
+				274EDDB423D4583A000B505D /* UIAlertControllerViewController.swift */,
+				274EDDBE23D46C5D000B505D /* UIImageViewViewController.swift */,
+				274EDDC023D47061000B505D /* AutoPlayImageViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		274EDDC223D47116000B505D /* images */ = {
+			isa = PBXGroup;
+			children = (
+				274EDDC323D47131000B505D /* 01.jpg */,
+				274EDDC523D47131000B505D /* 02.jpg */,
+				274EDDB923D46C3C000B505D /* 04.jpg */,
+				274EDDC423D47131000B505D /* 03.jpg */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+		274EDDC923D47147000B505D /* icon */ = {
+			isa = PBXGroup;
+			children = (
+				274EDDCF23D47156000B505D /* play.png */,
+				274EDDCA23D47155000B505D /* play@2x.png */,
+				274EDDCC23D47155000B505D /* play@3x.png */,
+				274EDDCB23D47155000B505D /* stop.png */,
+				274EDDCD23D47155000B505D /* stop@2x.png */,
+				274EDDCE23D47156000B505D /* stop@3x.png */,
+			);
+			path = icon;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -122,8 +197,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				274EDDD023D47156000B505D /* play@2x.png in Resources */,
+				274EDDC723D47131000B505D /* 03.jpg in Resources */,
+				274EDDD123D47156000B505D /* stop.png in Resources */,
 				274EDDA323D402A6000B505D /* LaunchScreen.storyboard in Resources */,
+				274EDDD423D47156000B505D /* stop@3x.png in Resources */,
 				274EDDA023D402A6000B505D /* Assets.xcassets in Resources */,
+				274EDDBD23D46C3C000B505D /* 04.jpg in Resources */,
+				274EDDD323D47156000B505D /* stop@2x.png in Resources */,
+				274EDDD523D47156000B505D /* play.png in Resources */,
+				274EDDC823D47131000B505D /* 02.jpg in Resources */,
+				274EDDC623D47131000B505D /* 01.jpg in Resources */,
+				274EDDD223D47156000B505D /* play@3x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -134,9 +219,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				274EDDAE23D428E4000B505D /* UITextViewViewController.swift in Sources */,
+				274EDDB523D4583A000B505D /* UIAlertControllerViewController.swift in Sources */,
+				274EDDBF23D46C5D000B505D /* UIImageViewViewController.swift in Sources */,
 				274EDD9B23D4029E000B505D /* ViewController.swift in Sources */,
 				274EDD9723D4029E000B505D /* AppDelegate.swift in Sources */,
 				274EDD9923D4029E000B505D /* SceneDelegate.swift in Sources */,
+				274EDDB123D430A6000B505D /* UITextFieldViewController.swift in Sources */,
+				274EDDC123D47061000B505D /* AutoPlayImageViewController.swift in Sources */,
+				274EDDB323D4544F000B505D /* UIButtonViewController.swift in Sources */,
+				274EDDAC23D41F1E000B505D /* UIlabelViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
