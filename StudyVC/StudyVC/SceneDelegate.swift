@@ -11,20 +11,27 @@ import UIKit
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
-    let viewControllers = [ViewController(),
+    let viewControllers = [ViewController(), // 0
                            UIlabelViewController(),
                            UITextFieldViewController(),
                            UITextViewViewController(),
                            UIButtonViewController(),
-                           UIAlertControllerViewController(),
+                           UIAlertControllerViewController(), // 5
                            UIImageViewViewController(),
-                           AutoPlayImageViewController()
+                           AutoPlayImageViewController(),
+                           UIDatePickerViewController(),
+                           UIPickerViewViewController(),
+                           PickerInUITextFieldViewController(), // 10
+                           UISwitchViewController(),
+                           UISegmentedControlViewController(),
+                           UIProgressViewViewController()
+        
     ]
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         guard let windowScene = (scene as? UIWindowScene) else { return }
         window = UIWindow(frame: UIScreen.main.bounds)
-        window?.rootViewController = viewControllers[6]
+        window?.rootViewController = viewControllers[13]
         window?.makeKeyAndVisible()
         window?.windowScene = windowScene
     }

@@ -29,6 +29,13 @@
 		274EDDD323D47156000B505D /* stop@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 274EDDCD23D47155000B505D /* stop@2x.png */; };
 		274EDDD423D47156000B505D /* stop@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 274EDDCE23D47156000B505D /* stop@3x.png */; };
 		274EDDD523D47156000B505D /* play.png in Resources */ = {isa = PBXBuildFile; fileRef = 274EDDCF23D47156000B505D /* play.png */; };
+		274EDDD723D4907F000B505D /* UIDatePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274EDDD623D4907F000B505D /* UIDatePickerViewController.swift */; };
+		274EDDD923D4AA3C000B505D /* UIPickerViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274EDDD823D4AA3C000B505D /* UIPickerViewViewController.swift */; };
+		274EDDDB23D4AABB000B505D /* MyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274EDDDA23D4AABB000B505D /* MyViewController.swift */; };
+		274EDDDD23D4B004000B505D /* PickerInUITextFieldViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274EDDDC23D4B004000B505D /* PickerInUITextFieldViewController.swift */; };
+		274EDDDF23D59B5F000B505D /* UISwitchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274EDDDE23D59B5F000B505D /* UISwitchViewController.swift */; };
+		274EDDE123D59E78000B505D /* UISegmentedControlViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274EDDE023D59E78000B505D /* UISegmentedControlViewController.swift */; };
+		274EDDE323D5A16D000B505D /* UIProgressViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274EDDE223D5A16D000B505D /* UIProgressViewViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +63,13 @@
 		274EDDCD23D47155000B505D /* stop@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "stop@2x.png"; sourceTree = "<group>"; };
 		274EDDCE23D47156000B505D /* stop@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "stop@3x.png"; sourceTree = "<group>"; };
 		274EDDCF23D47156000B505D /* play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = play.png; sourceTree = "<group>"; };
+		274EDDD623D4907F000B505D /* UIDatePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIDatePickerViewController.swift; sourceTree = "<group>"; };
+		274EDDD823D4AA3C000B505D /* UIPickerViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIPickerViewViewController.swift; sourceTree = "<group>"; };
+		274EDDDA23D4AABB000B505D /* MyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyViewController.swift; sourceTree = "<group>"; };
+		274EDDDC23D4B004000B505D /* PickerInUITextFieldViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerInUITextFieldViewController.swift; sourceTree = "<group>"; };
+		274EDDDE23D59B5F000B505D /* UISwitchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UISwitchViewController.swift; sourceTree = "<group>"; };
+		274EDDE023D59E78000B505D /* UISegmentedControlViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UISegmentedControlViewController.swift; sourceTree = "<group>"; };
+		274EDDE223D5A16D000B505D /* UIProgressViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIProgressViewViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +125,13 @@
 				274EDDB423D4583A000B505D /* UIAlertControllerViewController.swift */,
 				274EDDBE23D46C5D000B505D /* UIImageViewViewController.swift */,
 				274EDDC023D47061000B505D /* AutoPlayImageViewController.swift */,
+				274EDDD623D4907F000B505D /* UIDatePickerViewController.swift */,
+				274EDDD823D4AA3C000B505D /* UIPickerViewViewController.swift */,
+				274EDDDA23D4AABB000B505D /* MyViewController.swift */,
+				274EDDDC23D4B004000B505D /* PickerInUITextFieldViewController.swift */,
+				274EDDDE23D59B5F000B505D /* UISwitchViewController.swift */,
+				274EDDE023D59E78000B505D /* UISegmentedControlViewController.swift */,
+				274EDDE223D5A16D000B505D /* UIProgressViewViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -220,15 +241,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				274EDDAE23D428E4000B505D /* UITextViewViewController.swift in Sources */,
+				274EDDDF23D59B5F000B505D /* UISwitchViewController.swift in Sources */,
+				274EDDDD23D4B004000B505D /* PickerInUITextFieldViewController.swift in Sources */,
 				274EDDB523D4583A000B505D /* UIAlertControllerViewController.swift in Sources */,
 				274EDDBF23D46C5D000B505D /* UIImageViewViewController.swift in Sources */,
 				274EDD9B23D4029E000B505D /* ViewController.swift in Sources */,
 				274EDD9723D4029E000B505D /* AppDelegate.swift in Sources */,
 				274EDD9923D4029E000B505D /* SceneDelegate.swift in Sources */,
+				274EDDD923D4AA3C000B505D /* UIPickerViewViewController.swift in Sources */,
 				274EDDB123D430A6000B505D /* UITextFieldViewController.swift in Sources */,
 				274EDDC123D47061000B505D /* AutoPlayImageViewController.swift in Sources */,
+				274EDDE123D59E78000B505D /* UISegmentedControlViewController.swift in Sources */,
 				274EDDB323D4544F000B505D /* UIButtonViewController.swift in Sources */,
+				274EDDDB23D4AABB000B505D /* MyViewController.swift in Sources */,
 				274EDDAC23D41F1E000B505D /* UIlabelViewController.swift in Sources */,
+				274EDDE323D5A16D000B505D /* UIProgressViewViewController.swift in Sources */,
+				274EDDD723D4907F000B505D /* UIDatePickerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
