@@ -24,14 +24,19 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
                            PickerInUITextFieldViewController(), // 10
                            UISwitchViewController(),
                            UISegmentedControlViewController(),
-                           UIProgressViewViewController()
-        
+                           UIProgressViewViewController(),
+                           UISliderViewController(),
+                           UIStepperViewController(), // 15
+                           UIWebViewViewController(),
+                           UITableViewViewController(),
+                           UICollectionViewViewController(),
+                           UISearchControllerVC()
     ]
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         guard let windowScene = (scene as? UIWindowScene) else { return }
         window = UIWindow(frame: UIScreen.main.bounds)
-        window?.rootViewController = viewControllers[13]
+        window?.rootViewController = viewControllers[19]
         window?.makeKeyAndVisible()
         window?.windowScene = windowScene
     }

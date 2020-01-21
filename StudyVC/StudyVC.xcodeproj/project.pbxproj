@@ -36,6 +36,34 @@
 		274EDDDF23D59B5F000B505D /* UISwitchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274EDDDE23D59B5F000B505D /* UISwitchViewController.swift */; };
 		274EDDE123D59E78000B505D /* UISegmentedControlViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274EDDE023D59E78000B505D /* UISegmentedControlViewController.swift */; };
 		274EDDE323D5A16D000B505D /* UIProgressViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274EDDE223D5A16D000B505D /* UIProgressViewViewController.swift */; };
+		274EDDE523D602EA000B505D /* UISliderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274EDDE423D602EA000B505D /* UISliderViewController.swift */; };
+		274EDDE723D603CA000B505D /* 05.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 274EDDE623D603CA000B505D /* 05.jpg */; };
+		274EDDE923D606C9000B505D /* UIStepperViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274EDDE823D606C9000B505D /* UIStepperViewController.swift */; };
+		274EDDEB23D60984000B505D /* UIWebViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274EDDEA23D60984000B505D /* UIWebViewViewController.swift */; };
+		274EDDF523D61193000B505D /* forward@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 274EDDEC23D61190000B505D /* forward@2x.png */; };
+		274EDDF623D61193000B505D /* back@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 274EDDED23D61190000B505D /* back@3x.png */; };
+		274EDDF723D61193000B505D /* refresh@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 274EDDEE23D61191000B505D /* refresh@3x.png */; };
+		274EDDF823D61193000B505D /* back@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 274EDDEF23D61191000B505D /* back@2x.png */; };
+		274EDDF923D61193000B505D /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = 274EDDF023D61191000B505D /* back.png */; };
+		274EDDFA23D61193000B505D /* refresh.png in Resources */ = {isa = PBXBuildFile; fileRef = 274EDDF123D61192000B505D /* refresh.png */; };
+		274EDDFB23D61193000B505D /* forward@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 274EDDF223D61192000B505D /* forward@3x.png */; };
+		274EDDFC23D61193000B505D /* refresh@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 274EDDF323D61192000B505D /* refresh@2x.png */; };
+		274EDDFD23D61193000B505D /* forward.png in Resources */ = {isa = PBXBuildFile; fileRef = 274EDDF423D61193000B505D /* forward.png */; };
+		274EDE0123D611A7000B505D /* stop2@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 274EDDFE23D611A7000B505D /* stop2@3x.png */; };
+		274EDE0223D611A7000B505D /* stop2.png in Resources */ = {isa = PBXBuildFile; fileRef = 274EDDFF23D611A7000B505D /* stop2.png */; };
+		274EDE0323D611A7000B505D /* stop2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 274EDE0023D611A7000B505D /* stop2@2x.png */; };
+		274EDE0523D6F570000B505D /* UITableViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274EDE0423D6F570000B505D /* UITableViewViewController.swift */; };
+		274EDE0723D720D3000B505D /* UICollectionViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274EDE0623D720D3000B505D /* UICollectionViewViewController.swift */; };
+		274EDE0923D723C5000B505D /* MyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274EDE0823D723C5000B505D /* MyCollectionViewCell.swift */; };
+		274EDE1123D744CB000B505D /* 005.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 274EDE0A23D744C6000B505D /* 005.jpg */; };
+		274EDE1223D744CB000B505D /* 007.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 274EDE0B23D744C8000B505D /* 007.jpg */; };
+		274EDE1323D744CB000B505D /* 006.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 274EDE0C23D744C8000B505D /* 006.jpg */; };
+		274EDE1423D744CB000B505D /* 001.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 274EDE0D23D744C9000B505D /* 001.jpg */; };
+		274EDE1523D744CB000B505D /* 004.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 274EDE0E23D744C9000B505D /* 004.jpg */; };
+		274EDE1623D744CB000B505D /* 002.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 274EDE0F23D744CA000B505D /* 002.jpg */; };
+		274EDE1723D744CB000B505D /* 003.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 274EDE1023D744CB000B505D /* 003.jpg */; };
+		274EDE1923D74EF0000B505D /* UISearchControllerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274EDE1823D74EF0000B505D /* UISearchControllerVC.swift */; };
+		274EDE1B23D74F4D000B505D /* UISearchControllerVCExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274EDE1A23D74F4D000B505D /* UISearchControllerVCExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -70,6 +98,34 @@
 		274EDDDE23D59B5F000B505D /* UISwitchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UISwitchViewController.swift; sourceTree = "<group>"; };
 		274EDDE023D59E78000B505D /* UISegmentedControlViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UISegmentedControlViewController.swift; sourceTree = "<group>"; };
 		274EDDE223D5A16D000B505D /* UIProgressViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIProgressViewViewController.swift; sourceTree = "<group>"; };
+		274EDDE423D602EA000B505D /* UISliderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UISliderViewController.swift; sourceTree = "<group>"; };
+		274EDDE623D603CA000B505D /* 05.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 05.jpg; sourceTree = "<group>"; };
+		274EDDE823D606C9000B505D /* UIStepperViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIStepperViewController.swift; sourceTree = "<group>"; };
+		274EDDEA23D60984000B505D /* UIWebViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIWebViewViewController.swift; sourceTree = "<group>"; };
+		274EDDEC23D61190000B505D /* forward@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "forward@2x.png"; sourceTree = "<group>"; };
+		274EDDED23D61190000B505D /* back@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back@3x.png"; sourceTree = "<group>"; };
+		274EDDEE23D61191000B505D /* refresh@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "refresh@3x.png"; sourceTree = "<group>"; };
+		274EDDEF23D61191000B505D /* back@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back@2x.png"; sourceTree = "<group>"; };
+		274EDDF023D61191000B505D /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back.png; sourceTree = "<group>"; };
+		274EDDF123D61192000B505D /* refresh.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = refresh.png; sourceTree = "<group>"; };
+		274EDDF223D61192000B505D /* forward@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "forward@3x.png"; sourceTree = "<group>"; };
+		274EDDF323D61192000B505D /* refresh@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "refresh@2x.png"; sourceTree = "<group>"; };
+		274EDDF423D61193000B505D /* forward.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = forward.png; sourceTree = "<group>"; };
+		274EDDFE23D611A7000B505D /* stop2@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "stop2@3x.png"; sourceTree = "<group>"; };
+		274EDDFF23D611A7000B505D /* stop2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stop2.png; sourceTree = "<group>"; };
+		274EDE0023D611A7000B505D /* stop2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "stop2@2x.png"; sourceTree = "<group>"; };
+		274EDE0423D6F570000B505D /* UITableViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewViewController.swift; sourceTree = "<group>"; };
+		274EDE0623D720D3000B505D /* UICollectionViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionViewViewController.swift; sourceTree = "<group>"; };
+		274EDE0823D723C5000B505D /* MyCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCollectionViewCell.swift; sourceTree = "<group>"; };
+		274EDE0A23D744C6000B505D /* 005.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 005.jpg; sourceTree = "<group>"; };
+		274EDE0B23D744C8000B505D /* 007.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 007.jpg; sourceTree = "<group>"; };
+		274EDE0C23D744C8000B505D /* 006.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 006.jpg; sourceTree = "<group>"; };
+		274EDE0D23D744C9000B505D /* 001.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 001.jpg; sourceTree = "<group>"; };
+		274EDE0E23D744C9000B505D /* 004.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 004.jpg; sourceTree = "<group>"; };
+		274EDE0F23D744CA000B505D /* 002.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 002.jpg; sourceTree = "<group>"; };
+		274EDE1023D744CB000B505D /* 003.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 003.jpg; sourceTree = "<group>"; };
+		274EDE1823D74EF0000B505D /* UISearchControllerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UISearchControllerVC.swift; sourceTree = "<group>"; };
+		274EDE1A23D74F4D000B505D /* UISearchControllerVCExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UISearchControllerVCExtensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +166,8 @@
 				274EDD9F23D402A6000B505D /* Assets.xcassets */,
 				274EDDA123D402A6000B505D /* LaunchScreen.storyboard */,
 				274EDDA423D402A6000B505D /* Info.plist */,
+				274EDE0823D723C5000B505D /* MyCollectionViewCell.swift */,
+				274EDE1A23D74F4D000B505D /* UISearchControllerVCExtensions.swift */,
 			);
 			path = StudyVC;
 			sourceTree = "<group>";
@@ -132,6 +190,12 @@
 				274EDDDE23D59B5F000B505D /* UISwitchViewController.swift */,
 				274EDDE023D59E78000B505D /* UISegmentedControlViewController.swift */,
 				274EDDE223D5A16D000B505D /* UIProgressViewViewController.swift */,
+				274EDDE423D602EA000B505D /* UISliderViewController.swift */,
+				274EDDE823D606C9000B505D /* UIStepperViewController.swift */,
+				274EDDEA23D60984000B505D /* UIWebViewViewController.swift */,
+				274EDE0423D6F570000B505D /* UITableViewViewController.swift */,
+				274EDE0623D720D3000B505D /* UICollectionViewViewController.swift */,
+				274EDE1823D74EF0000B505D /* UISearchControllerVC.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -139,10 +203,18 @@
 		274EDDC223D47116000B505D /* images */ = {
 			isa = PBXGroup;
 			children = (
+				274EDE0D23D744C9000B505D /* 001.jpg */,
+				274EDE0F23D744CA000B505D /* 002.jpg */,
+				274EDE1023D744CB000B505D /* 003.jpg */,
+				274EDE0E23D744C9000B505D /* 004.jpg */,
+				274EDE0A23D744C6000B505D /* 005.jpg */,
+				274EDE0C23D744C8000B505D /* 006.jpg */,
+				274EDE0B23D744C8000B505D /* 007.jpg */,
 				274EDDC323D47131000B505D /* 01.jpg */,
 				274EDDC523D47131000B505D /* 02.jpg */,
-				274EDDB923D46C3C000B505D /* 04.jpg */,
 				274EDDC423D47131000B505D /* 03.jpg */,
+				274EDDE623D603CA000B505D /* 05.jpg */,
+				274EDDB923D46C3C000B505D /* 04.jpg */,
 			);
 			path = images;
 			sourceTree = "<group>";
@@ -153,6 +225,18 @@
 				274EDDCF23D47156000B505D /* play.png */,
 				274EDDCA23D47155000B505D /* play@2x.png */,
 				274EDDCC23D47155000B505D /* play@3x.png */,
+				274EDDF023D61191000B505D /* back.png */,
+				274EDDEF23D61191000B505D /* back@2x.png */,
+				274EDDED23D61190000B505D /* back@3x.png */,
+				274EDDF423D61193000B505D /* forward.png */,
+				274EDDEC23D61190000B505D /* forward@2x.png */,
+				274EDDF223D61192000B505D /* forward@3x.png */,
+				274EDDF123D61192000B505D /* refresh.png */,
+				274EDDF323D61192000B505D /* refresh@2x.png */,
+				274EDDEE23D61191000B505D /* refresh@3x.png */,
+				274EDDFF23D611A7000B505D /* stop2.png */,
+				274EDE0023D611A7000B505D /* stop2@2x.png */,
+				274EDDFE23D611A7000B505D /* stop2@3x.png */,
 				274EDDCB23D47155000B505D /* stop.png */,
 				274EDDCD23D47155000B505D /* stop@2x.png */,
 				274EDDCE23D47156000B505D /* stop@3x.png */,
@@ -218,17 +302,37 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				274EDDE723D603CA000B505D /* 05.jpg in Resources */,
+				274EDE0123D611A7000B505D /* stop2@3x.png in Resources */,
+				274EDDFC23D61193000B505D /* refresh@2x.png in Resources */,
+				274EDE1223D744CB000B505D /* 007.jpg in Resources */,
+				274EDDFA23D61193000B505D /* refresh.png in Resources */,
 				274EDDD023D47156000B505D /* play@2x.png in Resources */,
+				274EDE1523D744CB000B505D /* 004.jpg in Resources */,
+				274EDDF923D61193000B505D /* back.png in Resources */,
 				274EDDC723D47131000B505D /* 03.jpg in Resources */,
+				274EDE1723D744CB000B505D /* 003.jpg in Resources */,
+				274EDDF823D61193000B505D /* back@2x.png in Resources */,
 				274EDDD123D47156000B505D /* stop.png in Resources */,
 				274EDDA323D402A6000B505D /* LaunchScreen.storyboard in Resources */,
+				274EDDF623D61193000B505D /* back@3x.png in Resources */,
+				274EDE1423D744CB000B505D /* 001.jpg in Resources */,
+				274EDE1323D744CB000B505D /* 006.jpg in Resources */,
 				274EDDD423D47156000B505D /* stop@3x.png in Resources */,
 				274EDDA023D402A6000B505D /* Assets.xcassets in Resources */,
+				274EDE1623D744CB000B505D /* 002.jpg in Resources */,
 				274EDDBD23D46C3C000B505D /* 04.jpg in Resources */,
+				274EDE0323D611A7000B505D /* stop2@2x.png in Resources */,
+				274EDE1123D744CB000B505D /* 005.jpg in Resources */,
+				274EDDFD23D61193000B505D /* forward.png in Resources */,
 				274EDDD323D47156000B505D /* stop@2x.png in Resources */,
+				274EDDFB23D61193000B505D /* forward@3x.png in Resources */,
+				274EDE0223D611A7000B505D /* stop2.png in Resources */,
 				274EDDD523D47156000B505D /* play.png in Resources */,
+				274EDDF723D61193000B505D /* refresh@3x.png in Resources */,
 				274EDDC823D47131000B505D /* 02.jpg in Resources */,
 				274EDDC623D47131000B505D /* 01.jpg in Resources */,
+				274EDDF523D61193000B505D /* forward@2x.png in Resources */,
 				274EDDD223D47156000B505D /* play@3x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -242,13 +346,20 @@
 			files = (
 				274EDDAE23D428E4000B505D /* UITextViewViewController.swift in Sources */,
 				274EDDDF23D59B5F000B505D /* UISwitchViewController.swift in Sources */,
+				274EDDEB23D60984000B505D /* UIWebViewViewController.swift in Sources */,
 				274EDDDD23D4B004000B505D /* PickerInUITextFieldViewController.swift in Sources */,
+				274EDDE923D606C9000B505D /* UIStepperViewController.swift in Sources */,
+				274EDE0723D720D3000B505D /* UICollectionViewViewController.swift in Sources */,
 				274EDDB523D4583A000B505D /* UIAlertControllerViewController.swift in Sources */,
 				274EDDBF23D46C5D000B505D /* UIImageViewViewController.swift in Sources */,
+				274EDE0523D6F570000B505D /* UITableViewViewController.swift in Sources */,
 				274EDD9B23D4029E000B505D /* ViewController.swift in Sources */,
 				274EDD9723D4029E000B505D /* AppDelegate.swift in Sources */,
 				274EDD9923D4029E000B505D /* SceneDelegate.swift in Sources */,
 				274EDDD923D4AA3C000B505D /* UIPickerViewViewController.swift in Sources */,
+				274EDE0923D723C5000B505D /* MyCollectionViewCell.swift in Sources */,
+				274EDDE523D602EA000B505D /* UISliderViewController.swift in Sources */,
+				274EDE1B23D74F4D000B505D /* UISearchControllerVCExtensions.swift in Sources */,
 				274EDDB123D430A6000B505D /* UITextFieldViewController.swift in Sources */,
 				274EDDC123D47061000B505D /* AutoPlayImageViewController.swift in Sources */,
 				274EDDE123D59E78000B505D /* UISegmentedControlViewController.swift in Sources */,
@@ -256,6 +367,7 @@
 				274EDDDB23D4AABB000B505D /* MyViewController.swift in Sources */,
 				274EDDAC23D41F1E000B505D /* UIlabelViewController.swift in Sources */,
 				274EDDE323D5A16D000B505D /* UIProgressViewViewController.swift in Sources */,
+				274EDE1923D74EF0000B505D /* UISearchControllerVC.swift in Sources */,
 				274EDDD723D4907F000B505D /* UIDatePickerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
