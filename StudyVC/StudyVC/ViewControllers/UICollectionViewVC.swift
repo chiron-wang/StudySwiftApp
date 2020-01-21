@@ -8,7 +8,7 @@
 
 import UIKit
 
-class UICollectionViewViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
+class UICollectionViewVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
     // 取得螢幕的尺寸
     let fullScreenSize = UIScreen.main.bounds.size
 

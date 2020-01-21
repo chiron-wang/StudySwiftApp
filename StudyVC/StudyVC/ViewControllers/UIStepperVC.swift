@@ -8,7 +8,7 @@
 
 import UIKit
 
-class UIStepperViewController: UIViewController {
+class UIStepperVC: UIViewController {
     // 取得螢幕尺寸
     let fullScreenSize = UIScreen.main.bounds.size
     
@@ -57,7 +57,7 @@ class UIStepperViewController: UIViewController {
         myStepper.wraps = true
         
         // UIStepper 按下增減按鈕後 執行的動作
-        myStepper.addTarget(self, action: #selector(UIStepperViewController.onStepperChange), for: .valueChanged)
+        myStepper.addTarget(self, action: #selector(UIStepperVC.onStepperChange), for: .valueChanged)
         
         // 設值 UIStepper 位置並放入畫面中
         myStepper.center = CGPoint(x: fullScreenSize.width * 0.5, y: fullScreenSize.height * 0.5)

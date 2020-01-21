@@ -12,31 +12,33 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
     let viewControllers = [ViewController(), // 0
-                           UIlabelViewController(),
-                           UITextFieldViewController(),
-                           UITextViewViewController(),
-                           UIButtonViewController(),
-                           UIAlertControllerViewController(), // 5
-                           UIImageViewViewController(),
-                           AutoPlayImageViewController(),
-                           UIDatePickerViewController(),
-                           UIPickerViewViewController(),
-                           PickerInUITextFieldViewController(), // 10
-                           UISwitchViewController(),
-                           UISegmentedControlViewController(),
-                           UIProgressViewViewController(),
-                           UISliderViewController(),
-                           UIStepperViewController(), // 15
-                           UIWebViewViewController(),
-                           UITableViewViewController(),
-                           UICollectionViewViewController(),
-                           UISearchControllerVC()
+                           UILabelVC(),
+                           UITextFieldVC(),
+                           UITextViewVC(),
+                           UIButtonVC(),
+                           UIAlertControllerVC(), // 5
+                           UIImageViewVC(),
+                           AutoPlayImageVC(),
+                           UIDatePickerVC(),
+                           UIPickerViewVC(),
+                           PickerInUITextFieldVC(), // 10
+                           UISwitchVC(),
+                           UISegmentedControlVC(),
+                           UIProgressViewVC(),
+                           UISliderVC(),
+                           UIStepperVC(), // 15
+                           UIWebViewVC(),
+                           UITableViewVC(),
+                           UICollectionViewVC(),
+                           UISearchControllerVC(),
+                           UIScrollViewVC(), // 20
+                           UIPageControlVC()
     ]
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         guard let windowScene = (scene as? UIWindowScene) else { return }
         window = UIWindow(frame: UIScreen.main.bounds)
-        window?.rootViewController = viewControllers[19]
+        window?.rootViewController = viewControllers[0]
         window?.makeKeyAndVisible()
         window?.windowScene = windowScene
     }

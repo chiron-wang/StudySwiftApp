@@ -9,7 +9,7 @@
 import UIKit
 import WebKit
 
-class UIWebViewViewController: UIViewController, UITextFieldDelegate, WKNavigationDelegate {
+class UIWebViewVC: UIViewController, UITextFieldDelegate, WKNavigationDelegate {
     // 取得螢幕尺寸
     let fullScreenSize = UIScreen.main.bounds.size
     
@@ -30,28 +30,28 @@ class UIWebViewViewController: UIViewController, UITextFieldDelegate, WKNavigati
         // 建立五個 UIButton
         var myButton = UIButton(frame: CGRect(x: 0, y: 20, width: actionWidth, height: actionWidth))
         myButton.setImage(UIImage(named: "back")!, for: .normal)
-        myButton.addTarget(self, action: #selector(UIWebViewViewController.back), for: .touchUpInside)
+        myButton.addTarget(self, action: #selector(UIWebViewVC.back), for: .touchUpInside)
         self.view.addSubview(myButton)
         
         myButton = UIButton(frame: CGRect(x: actionWidth, y: 20, width: actionWidth, height: actionWidth))
         myButton.setImage(UIImage(named: "forward")!, for: .normal)
-        myButton.addTarget(self, action: #selector(UIWebViewViewController.forward), for: .touchUpInside)
+        myButton.addTarget(self, action: #selector(UIWebViewVC.forward), for: .touchUpInside)
         self.view.addSubview(myButton)
         
         myButton = UIButton(frame: CGRect(x: actionWidth * 2, y: 20, width: actionWidth, height: actionWidth))
         myButton.setImage(UIImage(named: "refresh")!, for: .normal)
-        myButton.addTarget(self, action: #selector(UIWebViewViewController.reload), for: .touchUpInside)
+        myButton.addTarget(self, action: #selector(UIWebViewVC.reload), for: .touchUpInside)
         self.view.addSubview(myButton)
         
         myButton = UIButton(frame: CGRect(x: actionWidth * 3, y: 20, width: actionWidth, height: actionWidth))
         myButton.setImage(UIImage(named: "stop2")!, for: .normal)
-        myButton.addTarget(self, action: #selector(UIWebViewViewController.stop), for: .touchUpInside)
+        myButton.addTarget(self, action: #selector(UIWebViewVC.stop), for: .touchUpInside)
         self.view.addSubview(myButton)
         
         myButton = UIButton(frame: CGRect(x: Double(fullScreenSize.width) - goWidth, y: 20, width: goWidth, height: actionWidth))
         myButton.setTitle("前往", for: .normal)
         myButton.setTitleColor(.black, for: .normal)
-        myButton.addTarget(self, action: #selector(UIWebViewViewController.go), for: .touchUpInside)
+        myButton.addTarget(self, action: #selector(UIWebViewVC.go), for: .touchUpInside)
         self.view.addSubview(myButton)
         
         // 建立一個 UITextField 用來輸入網址

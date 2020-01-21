@@ -8,7 +8,7 @@
 
 import UIKit
 
-class UITextFieldViewController: UIViewController, UITextFieldDelegate {
+class UITextFieldVC: UIViewController, UITextFieldDelegate {
     // 取得螢幕的尺寸
     let fullScreenSize = UIScreen.main.bounds.size
         

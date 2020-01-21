@@ -8,7 +8,7 @@
 
 import UIKit
 
-class UIAlertControllerViewController: UIViewController {
+class UIAlertControllerVC: UIViewController {
     // 取得螢幕尺寸
     let fullScreenSize = UIScreen.main.bounds.size
 
@@ -20,7 +20,7 @@ class UIAlertControllerViewController: UIViewController {
         myButton.frame = CGRect(x: 0, y: 0, width: 100, height: 30)
         myButton.setTitle("簡單提示", for: .normal)
         myButton.backgroundColor = .init(red: 0.9, green: 0.9, blue: 0.9, alpha: 1)
-        myButton.addTarget(nil, action: #selector(UIAlertControllerViewController.simpleHint), for: .touchUpInside)
+        myButton.addTarget(nil, action: #selector(UIAlertControllerVC.simpleHint), for: .touchUpInside)
         myButton.center = CGPoint(x: fullScreenSize.width * 0.5, y: fullScreenSize.height * 0.15)
         self.view.addSubview(myButton)
         
@@ -29,7 +29,7 @@ class UIAlertControllerViewController: UIViewController {
         myButton.frame = CGRect(x: 0, y: 0, width: 100, height: 30)
         myButton.setTitle("送出", for: .normal)
         myButton.backgroundColor = .init(red: 0.9, green: 0.9, blue: 0.9, alpha: 1)
-        myButton.addTarget(nil, action: #selector(UIAlertControllerViewController.confirm), for: .touchUpInside)
+        myButton.addTarget(nil, action: #selector(UIAlertControllerVC.confirm), for: .touchUpInside)
         myButton.center = CGPoint(x: fullScreenSize.width * 0.5, y: fullScreenSize.height * 0.3)
         self.view.addSubview(myButton)
         
@@ -38,7 +38,7 @@ class UIAlertControllerViewController: UIViewController {
         myButton.frame = CGRect(x: 0, y: 0, width: 100, height: 30)
         myButton.setTitle("刪除", for: .normal)
         myButton.backgroundColor = .init(red: 0.9, green: 0.9, blue: 0.9, alpha: 1)
-        myButton.addTarget(nil, action: #selector(UIAlertControllerViewController.deleteSomething), for: .touchUpInside)
+        myButton.addTarget(nil, action: #selector(UIAlertControllerVC.deleteSomething), for: .touchUpInside)
         myButton.center = CGPoint(x: fullScreenSize.width * 0.5, y: fullScreenSize.height * 0.45)
         self.view.addSubview(myButton)
         
@@ -47,7 +47,7 @@ class UIAlertControllerViewController: UIViewController {
         myButton.frame = CGRect(x: 0, y: 0, width: 100, height: 30)
         myButton.setTitle("登入", for: .normal)
         myButton.backgroundColor = .init(red: 0.9, green: 0.9, blue: 0.9, alpha: 1)
-        myButton.addTarget(nil, action: #selector(UIAlertControllerViewController.login), for: .touchUpInside)
+        myButton.addTarget(nil, action: #selector(UIAlertControllerVC.login), for: .touchUpInside)
         myButton.center = CGPoint(x: fullScreenSize.width * 0.5, y: fullScreenSize.height * 0.6)
         self.view.addSubview(myButton)
         
@@ -56,7 +56,7 @@ class UIAlertControllerViewController: UIViewController {
         myButton.frame = CGRect(x: 0, y: 0, width: 100, height: 30)
         myButton.setTitle("底部提示", for: .normal)
         myButton.backgroundColor = .init(red: 0.9, green: 0.9, blue: 0.9, alpha: 1)
-        myButton.addTarget(nil, action: #selector(UIAlertControllerViewController.bottomAlert), for: .touchUpInside)
+        myButton.addTarget(nil, action: #selector(UIAlertControllerVC.bottomAlert), for: .touchUpInside)
         myButton.center = CGPoint(x: fullScreenSize.width * 0.5, y: fullScreenSize.height * 0.75)
         self.view.addSubview(myButton)
     }

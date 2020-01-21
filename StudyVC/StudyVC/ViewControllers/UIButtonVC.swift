@@ -8,7 +8,7 @@
 
 import UIKit
 
-class UIButtonViewController: UIViewController {
+class UIButtonVC: UIViewController {
     // 取得螢幕尺寸
     let fullScreenSize = UIScreen.main.bounds.size
 
@@ -43,7 +43,7 @@ class UIButtonViewController: UIViewController {
         myButton.backgroundColor = .darkGray
         
         // 按鈕按下後的動作
-        myButton.addTarget(nil, action: #selector(UIButtonViewController.clickButton), for: .touchUpInside)
+        myButton.addTarget(nil, action: #selector(UIButtonVC.clickButton), for: .touchUpInside)
         
         // 設置位置並加入畫面
         myButton.center = CGPoint(x: fullScreenSize.width * 0.5, y: fullScreenSize.height * 0.5)

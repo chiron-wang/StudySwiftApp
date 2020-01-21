@@ -8,7 +8,7 @@
 
 import UIKit
 
-class UITableViewViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class UITableViewVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     // 取得螢幕的尺寸
     let fullScreenSize = UIScreen.main.bounds.size
     

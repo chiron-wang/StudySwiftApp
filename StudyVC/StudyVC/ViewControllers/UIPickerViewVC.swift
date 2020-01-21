@@ -8,7 +8,7 @@
 
 import UIKit
 
-class UIPickerViewViewController: UIViewController {
+class UIPickerViewVC: UIViewController {
     // 取得螢幕的尺寸
     let fullScreenSize = UIScreen.main.bounds.size
 

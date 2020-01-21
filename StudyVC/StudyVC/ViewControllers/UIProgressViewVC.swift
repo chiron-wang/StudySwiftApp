@@ -8,7 +8,7 @@
 
 import UIKit
 
-class UIProgressViewViewController: UIViewController {
+class UIProgressViewVC: UIViewController {
     // 取得螢幕的尺寸
     let fullScreenSize = UIScreen.main.bounds.size
     
@@ -53,7 +53,7 @@ class UIProgressViewViewController: UIViewController {
         myButton = UIButton(frame: CGRect(x: 0, y: 0, width: 100, height: 30))
         myButton.setTitle("Reset", for: .normal)
         myButton.backgroundColor = .blue
-        myButton.addTarget(nil, action: #selector(UIProgressViewViewController.clickButton), for: .touchUpInside)
+        myButton.addTarget(nil, action: #selector(UIProgressViewVC.clickButton), for: .touchUpInside)
         myButton.center = CGPoint(x: fullScreenSize.width * 0.5, y: fullScreenSize.height * 0.65)
         self.view.addSubview(myButton)
         
@@ -70,7 +70,7 @@ class UIProgressViewViewController: UIViewController {
         myActivityIndicator.startAnimating()
         
         // 建立一個 Timer
-        myTimer = Timer.scheduledTimer(timeInterval: 0.2, target: self, selector: #selector(UIProgressViewViewController.showProgress), userInfo: ["test":"for userInfo test"], repeats: true)
+        myTimer = Timer.scheduledTimer(timeInterval: 0.2, target: self, selector: #selector(UIProgressViewVC.showProgress), userInfo: ["test":"for userInfo test"], repeats: true)
     }
     
     @objc func showProgress(_ sender: Timer) {

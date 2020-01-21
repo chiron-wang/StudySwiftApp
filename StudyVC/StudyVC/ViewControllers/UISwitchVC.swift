@@ -8,7 +8,7 @@
 
 import UIKit
 
-class UISwitchViewController: UIViewController {
+class UISwitchVC: UIViewController {
     // 取得螢幕的尺寸
     let fullScreenSize = UIScreen.main.bounds.size
 
@@ -38,7 +38,7 @@ class UISwitchViewController: UIViewController {
         mySwitch.onTintColor = .brown
         
         // 設置切換 UISwitch 時執行的動作
-        mySwitch.addTarget(self, action: #selector(UISwitchViewController.onChange), for: .valueChanged)
+        mySwitch.addTarget(self, action: #selector(UISwitchVC.onChange), for: .valueChanged)
         
         // 設置位置並放入畫面中
         mySwitch.center = CGPoint(x: fullScreenSize.width * 0.5, y: fullScreenSize.height * 0.5)

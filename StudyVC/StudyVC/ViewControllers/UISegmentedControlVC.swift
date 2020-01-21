@@ -8,7 +8,7 @@
 
 import UIKit
 
-class UISegmentedControlViewController: UIViewController {
+class UISegmentedControlVC: UIViewController {
     // 取得螢幕尺寸
     let fullScreenSize = UIScreen.main.bounds.size
 
@@ -34,7 +34,7 @@ class UISegmentedControlViewController: UIViewController {
         mySegmentedControl.selectedSegmentIndex = 0
         
         // 設置切換選項時執行的動作
-        mySegmentedControl.addTarget(self, action: #selector(UISegmentedControlViewController.onChange), for: .valueChanged)
+        mySegmentedControl.addTarget(self, action: #selector(UISegmentedControlVC.onChange), for: .valueChanged)
         
         // 設置尺寸及位置並放入畫面中
         mySegmentedControl.frame.size = CGSize(width: fullScreenSize.width * 0.8, height: 30)

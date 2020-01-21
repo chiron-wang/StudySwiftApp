@@ -8,7 +8,7 @@
 
 import UIKit
 
-class UIDatePickerViewController: UIViewController {
+class UIDatePickerVC: UIViewController {
     // 取得螢幕的尺寸
     let fullScreenSize = UIScreen.main.bounds.size
     
@@ -55,7 +55,7 @@ class UIDatePickerViewController: UIViewController {
         myDatePicker.locale = Locale(identifier: "zh_TW")
         
         // 設置改變日期時間會執行動作的方法
-        myDatePicker.addTarget(self, action: #selector(UIDatePickerViewController.datePickerChanged), for: .valueChanged)
+        myDatePicker.addTarget(self, action: #selector(UIDatePickerVC.datePickerChanged), for: .valueChanged)
         
         // 設置位置並加入到畫面中
         myDatePicker.center = CGPoint(x: fullScreenSize.width * 0.5, y: fullScreenSize.height * 0.4)

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class PickerInUITextFieldViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
+class PickerInUITextFieldVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
         
     // 取得螢幕的尺寸
     let fullScreenSize = UIScreen.main.bounds.size
@@ -69,7 +69,7 @@ class PickerInUITextFieldViewController: UIViewController, UIPickerViewDelegate,
         myDatePicker.date = Date()
         
         // 設置 UIDatePicker 改變日期時會執行動作的方法
-        myDatePicker.addTarget(self, action: #selector(PickerInUITextFieldViewController.datePickerChanged), for: .valueChanged)
+        myDatePicker.addTarget(self, action: #selector(PickerInUITextFieldVC.datePickerChanged), for: .valueChanged)
         
         // 將 UITextField 原先鍵盤的視圖更換成 UIDatePicker
         myTextField.inputView = myDatePicker
@@ -84,7 +84,7 @@ class PickerInUITextFieldViewController: UIViewController, UIPickerViewDelegate,
         self.view.addSubview(myTextField)
         
         // 增加一個觸控事件
-        let tap = UITapGestureRecognizer(target: self, action: #selector(PickerInUITextFieldViewController.hideKeyboard(tagG:)))
+        let tap = UITapGestureRecognizer(target: self, action: #selector(PickerInUITextFieldVC.hideKeyboard(tagG:)))
         
         tap.cancelsTouchesInView = false
         

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class UITextViewViewController: UIViewController {
+class UITextViewVC: UIViewController {
     // 取得螢幕的尺寸
     let fullScreenSize = UIScreen.main.bounds.size
     
@@ -55,8 +55,8 @@ class UITextViewViewController: UIViewController {
         self.view.addSubview(myTextView)
         
         // 建立兩個新的選項
-        let mail = UIMenuItem(title: "寄送", action: #selector(UITextViewViewController.sendMail))
-        let facebook = UIMenuItem(title: "FB", action: #selector(UITextViewViewController.sendFB))
+        let mail = UIMenuItem(title: "寄送", action: #selector(UITextViewVC.sendMail))
+        let facebook = UIMenuItem(title: "FB", action: #selector(UITextViewVC.sendFB))
         
         // 建立選單
         let menu = UIMenuController.shared
@@ -65,7 +65,7 @@ class UITextViewViewController: UIViewController {
         menu.menuItems = [mail, facebook]
         
         // 增加一個觸控事件
-        let tap = UITapGestureRecognizer(target: self, action: #selector(UITextViewViewController.hideKeyboard(tapG:)))
+        let tap = UITapGestureRecognizer(target: self, action: #selector(UITextViewVC.hideKeyboard(tapG:)))
         
         tap.cancelsTouchesInView = false
         

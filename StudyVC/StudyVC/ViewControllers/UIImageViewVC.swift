@@ -8,7 +8,7 @@
 
 import UIKit
 
-class UIImageViewViewController: UIViewController {
+class UIImageViewVC: UIViewController {
     // 取得螢幕尺寸
     let fullScreenSize = UIScreen.main.bounds.size
 

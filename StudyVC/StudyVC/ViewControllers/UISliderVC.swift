@@ -8,7 +8,7 @@
 
 import UIKit
 
-class UISliderViewController: UIViewController {
+class UISliderVC: UIViewController {
     // 取得螢幕的尺寸
     let fullScreenSize = UIScreen.main.bounds.size
     
@@ -57,7 +57,7 @@ class UISliderViewController: UIViewController {
         mySlider.isContinuous = true
         
         // UISlider 滑動滑桿時執行的動作
-        mySlider.addTarget(self, action: #selector(UISliderViewController.onSliderChange), for: .valueChanged)
+        mySlider.addTarget(self, action: #selector(UISliderVC.onSliderChange), for: .valueChanged)
         
         // 設置位置並放入畫面中
         mySlider.center = CGPoint(x: fullScreenSize.width * 0.5, y: fullScreenSize.height * 0.65)

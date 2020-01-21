@@ -8,7 +8,7 @@
 
 import UIKit
 
-class UIlabelViewController: UIViewController {
+class UILabelVC: UIViewController {
     // 取得螢幕的尺寸
     let fullScreenSize = UIScreen.main.bounds.size
 

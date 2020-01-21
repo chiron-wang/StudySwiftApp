@@ -8,7 +8,7 @@
 
 import UIKit
 
-class AutoPlayImageViewController: UIViewController {
+class AutoPlayImageVC: UIViewController {
     // 取得螢幕尺寸
     let fullScreenSize = UIScreen.main.bounds.size
     
@@ -51,7 +51,7 @@ class AutoPlayImageViewController: UIViewController {
         playButton.setImage(UIImage(named: "play"), for: .normal)
         
         // 設置按下播放按鈕的動作方法
-        playButton.addTarget(self, action: #selector(AutoPlayImageViewController.play), for: .touchUpInside)
+        playButton.addTarget(self, action: #selector(AutoPlayImageVC.play), for: .touchUpInside)
         
         // 設置位置及放入畫面中
         playButton.center = CGPoint(x: fullScreenSize.width * 0.35, y: fullScreenSize.height * 0.65)
@@ -64,7 +64,7 @@ class AutoPlayImageViewController: UIViewController {
         stopButton.setImage(UIImage(named: "stop"), for: .normal)
         
         // 設置按下停止按鈕的動作的方法
-        stopButton.addTarget(self, action: #selector(AutoPlayImageViewController.stop), for: .touchUpInside)
+        stopButton.addTarget(self, action: #selector(AutoPlayImageVC.stop), for: .touchUpInside)
         
         // 設置位置及放入畫面中
         stopButton.center = CGPoint(x: fullScreenSize.width * 0.65, y: fullScreenSize.height * 0.65)
