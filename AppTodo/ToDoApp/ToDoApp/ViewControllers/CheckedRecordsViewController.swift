@@ -14,6 +14,7 @@ class CheckedRecordsViewController: BaseViewController {
         super.viewDidLoad()
 
         self.title = "已完成事項"
+        self.automaticallyAdjustsScrollViewInsets = false
         checkStatus = true
         
         // 建立 UITableView

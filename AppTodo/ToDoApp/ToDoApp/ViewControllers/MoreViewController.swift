@@ -19,8 +19,6 @@ class MoreViewController: UIViewController, UITableViewDelegate, UITableViewData
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        print("MoreVC")
-        
         self.view.backgroundColor = .white
         self.navigationController?.navigationBar.isTranslucent = false
 //        self.automaticallyAdjustsScrollViewInsets = false
@@ -58,7 +56,7 @@ class MoreViewController: UIViewController, UITableViewDelegate, UITableViewData
         UIApplication.shared.open(requestUrl!, options: [:], completionHandler: nil)
     }
     
-    // MARK: UITableViewDelegate delegate methods
+    // MARK: UITableViewDelegate methods
 
     // 必須實作的方法：每一組有幾個 cell
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

@@ -24,6 +24,8 @@
 		2797413423DEC9B900301078 /* woohoo.wav in Resources */ = {isa = PBXBuildFile; fileRef = 2797413023DEC9B900301078 /* woohoo.wav */; };
 		2797413523DEC9B900301078 /* what-2.wav in Resources */ = {isa = PBXBuildFile; fileRef = 2797413123DEC9B900301078 /* what-2.wav */; };
 		2797413623DEC9B900301078 /* cutting-paper-2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2797413223DEC9B900301078 /* cutting-paper-2.mp3 */; };
+		2797414223DF47B500301078 /* Record.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2797414023DF47B500301078 /* Record.swift */; };
+		2797414323DF47B500301078 /* Record+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2797414123DF47B500301078 /* Record+CoreDataProperties.swift */; };
 		27B8947723DCA53A008745A2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B8947623DCA53A008745A2 /* AppDelegate.swift */; };
 		27B8947923DCA53A008745A2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B8947823DCA53A008745A2 /* SceneDelegate.swift */; };
 		27B8947B23DCA53A008745A2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B8947A23DCA53A008745A2 /* ViewController.swift */; };
@@ -53,6 +55,8 @@
 		2797413023DEC9B900301078 /* woohoo.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = woohoo.wav; sourceTree = "<group>"; };
 		2797413123DEC9B900301078 /* what-2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "what-2.wav"; sourceTree = "<group>"; };
 		2797413223DEC9B900301078 /* cutting-paper-2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "cutting-paper-2.mp3"; sourceTree = "<group>"; };
+		2797414023DF47B500301078 /* Record.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Record.swift; sourceTree = "<group>"; };
+		2797414123DF47B500301078 /* Record+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Record+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		27B8947323DCA53A008745A2 /* ToDoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		27B8947623DCA53A008745A2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		27B8947823DCA53A008745A2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -107,6 +111,15 @@
 			path = sounds;
 			sourceTree = "<group>";
 		};
+		2797413F23DF41E200301078 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2797414023DF47B500301078 /* Record.swift */,
+				2797414123DF47B500301078 /* Record+CoreDataProperties.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		27B8946A23DCA53A008745A2 = {
 			isa = PBXGroup;
 			children = (
@@ -126,12 +139,13 @@
 		27B8947523DCA53A008745A2 /* ToDoApp */ = {
 			isa = PBXGroup;
 			children = (
+				2797413F23DF41E200301078 /* Models */,
+				2797411523DEC9AD00301078 /* icons */,
+				2797412E23DEC9B900301078 /* sounds */,
 				27B8949123DCB607008745A2 /* ViewControllers */,
 				27B8947623DCA53A008745A2 /* AppDelegate.swift */,
 				27B8947823DCA53A008745A2 /* SceneDelegate.swift */,
 				27B8948223DCA546008745A2 /* Assets.xcassets */,
-				2797411523DEC9AD00301078 /* icons */,
-				2797412E23DEC9B900301078 /* sounds */,
 				27B8948423DCA546008745A2 /* LaunchScreen.storyboard */,
 				27B8948723DCA546008745A2 /* Info.plist */,
 				27B8947F23DCA53A008745A2 /* ToDoApp.xcdatamodeld */,
@@ -237,9 +251,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2797414323DF47B500301078 /* Record+CoreDataProperties.swift in Sources */,
 				27B8948E23DCA774008745A2 /* BaseViewController.swift in Sources */,
 				27B8949023DCA903008745A2 /* CoreDataConnect.swift in Sources */,
 				27B8947B23DCA53A008745A2 /* ViewController.swift in Sources */,
+				2797414223DF47B500301078 /* Record.swift in Sources */,
 				27B8949323DCB697008745A2 /* CheckedRecordsViewController.swift in Sources */,
 				27B8947723DCA53A008745A2 /* AppDelegate.swift in Sources */,
 				2797411423DDE14400301078 /* MoreViewController.swift in Sources */,

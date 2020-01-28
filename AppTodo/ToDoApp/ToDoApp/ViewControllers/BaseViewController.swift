@@ -30,7 +30,6 @@ class BaseViewController: UIViewController, UITableViewDelegate, UITableViewData
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        print("baseVC")
         // 連接 Core Data
         coreDataConnect = CoreDataConnect(context: self.moc)
         
@@ -47,14 +46,47 @@ class BaseViewController: UIViewController, UITableViewDelegate, UITableViewData
             soundOpen = open == 1 ? true : false
         }
         
+        // 取得資料
+        let selectResult = coreDataConnect.retrieve(myEntityName, predicate: "done = \(checkStatus ? "true": "false")", sort: [["seq":false], ["id":false]], limit: nil)
+        if let results = selectResult {
+            myRecords = results as? [Record]
+        }
+        
+        myTableView.reloadData()
+        
+        // 音效
+        if soundOpen {
+            let addSoundPath = Bundle.main.path(forResource: "bottle_pop_3", ofType: "wav")
+            let doneSoundPath = Bundle.main.path(forResource: (checkStatus ? "what-2": "woohoo"), ofType: "wav")
+            let deleteSoundPath = Bundle.main.path(forResource: "cutting-paper-2", ofType: "mp3")
+            do {
+                addSound = try AVAudioPlayer(contentsOf: URL(fileURLWithPath: addSoundPath!))
+                addSound!.numberOfLoops = 0
+                
+                doneSound = try AVAudioPlayer(contentsOf: URL(fileURLWithPath: doneSoundPath!))
+                doneSound!.numberOfLoops = 0
+                
+                deleteSound = try AVAudioPlayer(contentsOf: URL(fileURLWithPath: deleteSoundPath!))
+                deleteSound!.numberOfLoops = 0
+            } catch {
+                print("error")
+            }
+        } else {
+            addSound = nil
+            doneSound = nil
+            deleteSound = nil
+        }
         
     }
     
+    // MARK: - UITableView Delegate methods
     
+    // 必須實作的方法：每一組有幾個 cell
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return myRecords.count
     }
     
+    // 必須實作的方法：每個 cell 要顯示的內容
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         // 取得 tableView 目前使用的 cell
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as UITableViewCell
@@ -71,7 +103,7 @@ class BaseViewController: UIViewController, UITableViewDelegate, UITableViewData
         
         // 點選完成事項
         let checkBtn = UIButton(frame: CGRect(x: Double(fullSize.width) - 42, y: 2, width: 40, height: 40))
-        checkBtn.tag = checkTagTemp + Int(myRecords[indexPath.row].id)
+        checkBtn.tag = checkTagTemp + (myRecords[indexPath.row].id ?? 0).intValue
         checkBtn.addTarget(self, action: #selector(ViewController.checkBtnAction), for: .touchUpInside)
         checkBtn.setImage(UIImage(named: (checkStatus ? "check":"checkbox")), for: .normal)
         cell.contentView.addSubview(checkBtn)
@@ -97,7 +129,7 @@ class BaseViewController: UIViewController, UITableViewDelegate, UITableViewData
         let id = myRecords[indexPath.row].id
         
         if editingStyle == .delete {
-            if coreDataConnect.delete(myEntityName, predicate: "id = \(id)") {
+            if coreDataConnect.delete(myEntityName, predicate: "id = \(id!)") {
                 deleteSound?.play()
                 
                 myRecords.remove(at: indexPath.row)
@@ -106,7 +138,7 @@ class BaseViewController: UIViewController, UITableViewDelegate, UITableViewData
                 tableView.deleteRows(at: [indexPath], with: .fade)
                 tableView.endUpdates()
                 
-                print("刪除的是 \(id)")
+                print("刪除的是 \(id!)")
             }
         }
     }
@@ -120,7 +152,7 @@ class BaseViewController: UIViewController, UITableViewDelegate, UITableViewData
         if id != 0 {
             var index = -1
             for (i, record) in myRecords.enumerated() {
-                if Int(record.id) == id {
+                if Int(record.id as! Int) == id {
                     index = i
                     break
                 }

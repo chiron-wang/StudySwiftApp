@@ -15,9 +15,7 @@ class ViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        print("ViewController")
-        
-        self.title = "代辦事項"
+        self.title = "待辦事項"
         checkStatus = false
         
         // 建立 UITableView
@@ -76,8 +74,10 @@ class ViewController: BaseViewController {
             
             // 顯示完成按鈕
             for record in myRecords {
-                let btn = self.view.viewWithTag(checkTagTemp + Int(record.id)) as? UIButton
-                btn?.isHidden = false
+                if let id = record.id {
+                    let btn = self.view.viewWithTag(checkTagTemp + id.intValue) as? UIButton
+                    btn?.isHidden = false
+                }
             }
         } else {
             // 顯示編輯完成按鈕
@@ -90,8 +90,10 @@ class ViewController: BaseViewController {
             
             // 隱藏完成按鈕
             for record in myRecords {
-                let btn = self.view.viewWithTag(checkTagTemp + Int(record.id)) as? UIButton
-                btn?.isHidden = true
+                if let id = record.id {
+                    let btn = self.view.viewWithTag(checkTagTemp + id.intValue) as? UIButton
+                    btn?.isHidden = true
+                }
             }
         }
     }
@@ -167,10 +169,21 @@ class ViewController: BaseViewController {
         
         var tempArr: [Record] = []
         
-        // 排在後面的往前移動
         if (sourceIndexPath.row > destinationIndexPath.row) {
+            // 排在後面的往前移動
             for (index, value) in myRecords.enumerated() {
                 if index < destinationIndexPath.row || index > sourceIndexPath.row {
+                    tempArr.append(value)
+                } else if index == destinationIndexPath.row {
+                    tempArr.append(myRecords[sourceIndexPath.row])
+                } else if index <= sourceIndexPath.row {
+                    tempArr.append(myRecords[index - 1])
+                }
+            }
+        } else if (sourceIndexPath.row < destinationIndexPath.row) {
+            // 排在前的往後移動
+            for (index, value) in myRecords.enumerated() {
+                if index < sourceIndexPath.row || index > destinationIndexPath.row {
                     tempArr.append(value)
                 } else if index < destinationIndexPath.row {
                     tempArr.append(myRecords[index + 1])
@@ -198,7 +211,7 @@ class ViewController: BaseViewController {
     // 更新事項內容
     func updateRecordContent(_ indexPath: IndexPath) {
         let name = myRecords[indexPath.row].content!
-        let id = myRecords[indexPath.row].id
+        let id = myRecords[indexPath.row].id!.intValue
         
         // 更新事項
         let updateAlertController = UIAlertController(title: "更新", message: nil, preferredStyle: .alert)
@@ -238,9 +251,9 @@ class ViewController: BaseViewController {
         var count = myRecords.count
         
         for record in myRecords {
-            let result = coreDataConnect.update(myEntityName, predicate: "id = \(record.id)", attributeInfo: ["seq":"\(count)"])
+            let result = coreDataConnect.update(myEntityName, predicate: "id = \(record.id!)", attributeInfo: ["seq":"\(count)"])
             if result {
-                print("\(record.id) : \(count)")
+                print("\(record.id!) : \(count)")
             } else {
                 print("error")
             }
