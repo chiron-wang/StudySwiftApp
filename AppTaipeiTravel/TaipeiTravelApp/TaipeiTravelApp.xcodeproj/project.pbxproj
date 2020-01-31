@@ -39,6 +39,7 @@
 		27B16DAA23E484FA004B704B /* toilet.png in Resources */ = {isa = PBXBuildFile; fileRef = 27B16D9B23E484FA004B704B /* toilet.png */; };
 		27B16DAB23E484FA004B704B /* landmark@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 27B16D9C23E484FA004B704B /* landmark@2x.png */; };
 		27B16DAC23E484FA004B704B /* landmark@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 27B16D9D23E484FA004B704B /* landmark@3x.png */; };
+		27B16DAE23E48D39004B704B /* Launch.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 27B16DAD23E48D39004B704B /* Launch.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -76,6 +77,7 @@
 		27B16D9B23E484FA004B704B /* toilet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = toilet.png; sourceTree = "<group>"; };
 		27B16D9C23E484FA004B704B /* landmark@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "landmark@2x.png"; sourceTree = "<group>"; };
 		27B16D9D23E484FA004B704B /* landmark@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "landmark@3x.png"; sourceTree = "<group>"; };
+		27B16DAD23E48D39004B704B /* Launch.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Launch.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +118,7 @@
 				272220E423E2CFC30013C0FB /* Assets.xcassets */,
 				272220E623E2CFC30013C0FB /* LaunchScreen.storyboard */,
 				272220E923E2CFC30013C0FB /* Info.plist */,
+				27B16DAD23E48D39004B704B /* Launch.jpg */,
 			);
 			path = TaipeiTravelApp;
 			sourceTree = "<group>";
@@ -238,6 +241,7 @@
 				27B16DA723E484FA004B704B /* hotel@2x.png in Resources */,
 				27B16DA023E484FA004B704B /* hotel.png in Resources */,
 				27B16DA323E484FA004B704B /* info@2x.png in Resources */,
+				27B16DAE23E48D39004B704B /* Launch.jpg in Resources */,
 				27B16D9E23E484FA004B704B /* info.png in Resources */,
 				27B16DAA23E484FA004B704B /* toilet.png in Resources */,
 				27B16DA123E484FA004B704B /* park.png in Resources */,
