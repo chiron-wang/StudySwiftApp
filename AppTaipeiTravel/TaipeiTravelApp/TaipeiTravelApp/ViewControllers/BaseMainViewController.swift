@@ -163,6 +163,9 @@ class BaseMainViewController: UIViewController, CLLocationManagerDelegate, UITab
             cell = UITableViewCell(style: .value1, reuseIdentifier: "Cell")
         }
         
+        // 設置 Accessory 按鈕樣式
+        cell!.accessoryType = .disclosureIndicator
+        
         // 這筆資料
         let thisData = self.apiData[self.apiDataForDistance[indexPath.row].index]
         

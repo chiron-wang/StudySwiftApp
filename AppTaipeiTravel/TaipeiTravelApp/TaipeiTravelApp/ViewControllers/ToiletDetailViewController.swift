@@ -35,6 +35,12 @@ class ToiletDetailViewController: DetailViewController {
     
     // MARK:- UITableViewDelegate Methods
     
+    // 必須實作的方法：每一組有幾個 cell
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return hasMap ? 7 : 6
+    }
+    
+    // 必須實作的方法：每個 cell 要顯示的內容
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         // 取得 tableView 目前使用的 cell
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as UITableViewCell
@@ -52,6 +58,14 @@ class ToiletDetailViewController: DetailViewController {
                     content = content + " 無"
                 }
                 cell.textLabel?.text = content
+            } else if indexPath.row == 5 {
+                content = "親子廁間："
+                let yes = self.detail[indexPath.row]
+                if yes == "v" {
+                    content += " 有"
+                } else {
+                    content += " 無"
+                }
             } else if indexPath.row == 6 {
                 content = "貼心公廁："
                 let yes = self.detail[indexPath.row]

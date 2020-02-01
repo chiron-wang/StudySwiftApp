@@ -24,7 +24,7 @@ class LandmarkDetailViewController: DetailViewController {
             "地圖",
             info["type"] as? String ?? "",
             info["address"] as? String ?? "",
-            info["openTile"] as? String ?? "",
+            info["openTime"] as? String ?? "",
             info["transportation"] as? String ?? "",
             info["intro"] as? String ?? ""
         ]

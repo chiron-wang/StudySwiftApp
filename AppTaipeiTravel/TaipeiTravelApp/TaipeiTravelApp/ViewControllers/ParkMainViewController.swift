@@ -53,7 +53,7 @@ class ParkMainViewController: BaseMainViewController {
         }
         
         var longitude = 0.0
-        if let num = thisData["Lonitude"] as? String {
+        if let num = thisData["Longitude"] as? String {
             longitude = Double(num)!
         }
         
@@ -67,7 +67,7 @@ class ParkMainViewController: BaseMainViewController {
             "longitude": longitude as AnyObject
         ]
         
-        print(info["title "] as? String ?? "NO Title")
+        print(info["title"] as? String ?? "NO Title")
         
         let detailViewController = ParkDetailViewController()
         detailViewController.info = info
